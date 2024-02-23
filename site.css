@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --violeta: hsl(257, 40%, 49%);
+  --magenta: hsl(300, 69%, 71%);
+  --opensans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--violeta);
+  background-image: url("images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 0 50px;
+}
+
+header {
+  padding: 20px 0;
+}
+
+main .container {
+  display: flex;
+  gap: 50px;
+}
+main .container .texto {
+  color: #fff;
+}
+main .container .texto h1 {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 50px;
+  padding-top: 30px;
+}
+main .container .texto p {
+  padding: 40px 0;
+  font-family: var(--opensans);
+  line-height: 1.5;
+  font-size: 19px;
+}
+main .container .texto .btn {
+  background-color: #fff;
+  padding: 20px 80px;
+  font-family: var(--poppins);
+  font-size: 20px;
+  border-radius: 80px;
+  color: var(--violeta);
+  border: none;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .container .texto .btn:hover {
+  background-color: var(--magenta);
+  color: #fff;
+}
+
+footer .social-media {
+  text-align: right;
+}
+footer .social-media .social {
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+  font-size: 20px;
+}
+footer .social-media .social:hover {
+  border: 2px solid var(--magenta);
+  color: var(--magenta);
+}
+footer .attribution {
+  text-align: center;
+  color: #fff;
+  font-family: var(--poppins);
+}
+footer .attribution a {
+  color: var(--magenta);
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer .attribution a:hover {
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: url("images/bg-mobile.svg");
+  }
+  header {
+    padding: 20px 0;
+  }
+  header img {
+    width: 250px;
+  }
+  main .container {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .img img {
+    width: 400px;
+  }
+  main .texto h1 {
+    font-size: 15px;
+  }
+  main .texto p {
+    font-size: 20px;
+  }
+  main .btn {
+    margin-bottom: 25px;
+  }
+  footer {
+    text-align: center;
+    margin: 20px 0;
+  }
+  footer .social-media {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=site.css.map */
