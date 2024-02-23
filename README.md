@@ -19,7 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 Projetos retirados do [Frontend Mentor](https://www.frontendmentor.io/home).
 
-<img src='images/desktop-preview.jpg'>
+<img src='images/desktop-preview.jpg' alt=''>
 
 
 ## 📓 Licença
